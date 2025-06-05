@@ -1,22 +1,15 @@
-package com.devsenior.pablo.reto6.models.entities;
-
-import com.devsenior.pablo.reto6.models.dto.Estado;
+package com.devsenior.pablo.reto6.models.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
-
-import jakarta.validation.constraints.Min;
-import jakarta.validation.constraints.Max;
 import lombok.Data;
 
 @Data
-@Schema(description = "Modelo que representa a un libro en la vida real")
-public class Libro {
-
-    @Schema(description = "Identificador único del modelo", example = "1")
-    private Long id;
-    
+@Schema(description = "Modelo DTO que representa a un libro en la aplicación")
+public class LibroDTO {
     @Schema(description = "Titulo o encabezado del libro", example = "El principito")
     @NotBlank(message = "El campo 'titulo' es obligatorio.")
     private String titulo;
