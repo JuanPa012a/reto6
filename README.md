@@ -68,7 +68,7 @@ Esta petición lo que nos va a realizar es eliminar el libro que le solicitemos 
 Si el ID no se encuentra en la base de datos, va a arrojar un error 404
 
 # Repositorio
-https://github.com/JuanPa012a/reto6/tree/b6011eec18037986446a80a284cc16921244738f
+https://github.com/JuanPa012a/reto6.git
 
 # Conclusiones
 El proyecto cuenta con springdoc, por lo tanto se puede visualizar la documentacion por medio de swagger-ui/index.html
